@@ -1,3 +1,4 @@
+// Allow duplicates
 let array = []
 let arrayTwo = new Array() // Do not use
 
