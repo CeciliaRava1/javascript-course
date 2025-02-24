@@ -43,7 +43,7 @@ for (let value of string) {
 // console.log(amountOfVowels)
 
 // 6. Given an array of numbers, use a loop to multiply all the numbers and display the product
-let numbers = [1, 2, 3, 4, 5, 6, 7]
+let numbers = [1, 2, 30, 4, 5, 69, 7]
 counter = 0
 let multiplication = 1
 
@@ -61,7 +61,33 @@ while (counter <= 10) {
 }
 
 // 8. Use a loop to reverse a string
+let newString = ''
+for (let i = string.length - 1; i >= 0; i--) {
+    newString += string[i]
+}
+// console.log(string)
+// console.log(newString)
 
-// 9. Use a loop to generate the first 10 numbers of the Fibonacci sequence
+// 9. Use a loop to generate the first 10 numbers of the Fibonacci sequence (0, 1, 1, 2, 3, 5, 8, 13, 21, 34)
+for (let counter = 0; counter <= 8; counter++) {
+    if (counter == 0) {
+        numberOne = 0
+        numberTwo = 1
+        // console.log(numberOne)
+        // console.log(numberTwo)
+    } else {
+        numberThree = numberOne + numberTwo
+        // console.log(numberThree)
+        numberOne = numberTwo
+        numberTwo = numberThree
+    }
+}
 
 // 10. Given an array of numbers, use a loop to create a new array containing only numbers greater than 10
+let numberHigherTen = []
+for (value of numbers) {
+    if (value > 10) {
+        numberHigherTen.push(value)
+    }
+}
+// console.log(numberHigherTen)
