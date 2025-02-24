@@ -25,3 +25,13 @@ let person = {
 let { name: name1, age: age1 } = person
 console.log(name1)
 console.log(age1)
+
+
+// Spreading: used to expand an iterable (array/object) into its individual elements
+// Array
+let numbers1 = [...numbers, 100, 200]
+// console.log(numbers1)
+
+// Object
+let person1 = { ...person }
+console.log(person1)
