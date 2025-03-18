@@ -59,3 +59,27 @@ fs.rename("files/example.txt", "files/example1.txt", (err) => {
     if (err) throw err
     console.log("File renamed!")
  })
+
+
+// Update a file reading an array with products
+function updateProduct(name, newQuantitySold, newPrice) {
+    let product = findProduct(name)
+    if (product) {
+        product.quantitySold = newQuantitySold
+        product.price = newPrice
+
+        let fileContent = ""
+        products.forEach((product) => {
+            fileContent += `Product: ${product.name}, Quantity sold: ${product.quantitySold}, Price: ${product.price}\n`
+        })
+
+        fs.writeFile("products.txt", fileContent, (err) => {
+            if (err) throw err
+            console.log("Product updated and file overwritten")
+            showMenu()
+        })
+
+    } else {
+        console.log("Product not found")
+    }
+}
