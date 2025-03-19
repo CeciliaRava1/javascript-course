@@ -1,0 +1,20 @@
+// XML FIle
+<person>
+    <name>Marcos</name>
+    <age>18</age>
+    <dateOfBirth>01/09/20</dateOfBirth>
+    <programmingLanguages>python, rust</programmingLanguages>
+</person>
+
+// JSON FIle
+{
+    "name": "Luna",
+    "age": 30,
+    "dateOfBirth": "21/01/98",
+    "programmingLanguages": ["go", "typescript"]
+}
+
+// How to create a XML File
+// How to create a JSON File
+// How to transform XML File data in array
+// How to transform JSON File data in array
